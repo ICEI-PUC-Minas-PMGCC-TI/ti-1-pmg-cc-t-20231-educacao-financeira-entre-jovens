@@ -1,0 +1,63 @@
+### Contexto do projeto:  
+ 
+## Introdução: 
+O tema da educação financeira é extremamente importante em qualquer idade, mas especialmente crucial para jovens, que estão no início de suas vidas financeiras. Infelizmente, a falta de educação financeira entre jovens é uma realidade preocupante em muitos países, e pode levar a uma série de problemas financeiros no futuro. Por isso, este projeto visa abordar essa questão e fornecer aos jovens as ferramentas e conhecimentos necessários para tomar decisões financeiras inteligentes. 
+ 
+### Problema: 
+A falta de educação financeira entre jovens pode ter consequências graves, como endividamento excessivo, falta de planejamento financeiro e dificuldades em lidar com as finanças pessoais no futuro. Muitos jovens começam a vida adulta sem uma compreensão adequada de como gerenciar suas finanças pessoais, e isso pode levar a escolhas financeiras ruins que podem ter consequências a longo prazo.  
+ 
+### Objetivo do projeto: 
+O objetivo deste projeto é fornecer informações e ferramentas para ajudar jovens a se tornarem mais conscientes financeiramente e a tomar decisões financeiras inteligentes. Além disso, o projeto visa incentivar os jovens a ter um relacionamento saudável com o dinheiro, a fim de evitar problemas financeiros no futuro.  
+ 
+### Justificativa: 
+A falta de educação financeira é um problema generalizado entre jovens em muitos países, e é uma questão que deve ser abordada. Com a crescente complexidade do mundo financeiro, é importante que os jovens tenham um conhecimento adequado das finanças pessoais para tomar decisões informadas ao longo de suas vidas. Além disso, a educação financeira pode ajudar a reduzir a pobreza e a desigualdade econômica, permitindo que as pessoas tenham acesso a melhores oportunidades e recursos.  
+ 
+### Público-alvo: 
+O público-alvo deste projeto são jovens entre 16 e 30 anos que estão iniciando suas vidas financeiras. Isso inclui estudantes universitários, jovens profissionais e outros jovens adultos que estão começando a lidar com as finanças pessoais de forma mais independente 
+ 
+## Requisitos do projeto: 
+
+
+Desenvolver uma plataforma online interativa para fornecer informações sobre finanças pessoais, incluindo orçamento, dívidas, investimentos e planejamento financeiro.  
+ 
+Criar conteúdo educacional em formato de vídeos, textos e infográficos, para facilitar a compreensão dos conceitos financeiros.  
+ 
+Oferecer ferramentas práticas, como calculadoras de orçamento e planejadores financeiros, para ajudar os usuários a aplicar os conceitos financeiros em suas próprias vidas.  
+ 
+Criar uma comunidade online para permitir que os usuários compartilhem experiências, dicas e conselhos financeiros uns com os outros.  
+ 
+Disponibilizar o acesso à plataforma gratuitamente para atingir o maior número possível de jovens.  
+ 
+## Histórias dos usuários:  
+ 
+Igor se identifica como alguém que não possui uma boa educação financeira e tende a gastar seu dinheiro sem planejamento. Ele reconhece a importância desse conhecimento e busca aprendê-lo através de livros, cursos e vídeos de pessoas bem sucedidas financeiramente. A falta de educação financeira o afeta bastante, pois ele acaba gastando sem pensar nas consequências futuras. Para Igor, uma boa educação financeira poderia lhe proporcionar um "mindset" profissional e pessoal mais desenvolvido, gerando mais resultados em sua vida social e profissional. Como usuário do projeto, ele espera poder aprender mais sobre como gerenciar seu dinheiro e ter uma vida financeira mais saudável.  
+ 
+Hugo, um jovem de 21 anos, acaba de conseguir um emprego e está gastando todo o dinheiro que ganha em compras impulsivas e em atividades de lazer. Ele está enfrentando dificuldades financeiras e deseja aprender mais sobre como gerenciar seu dinheiro de forma mais inteligente.  
+ 
+Larissa, uma estudante universitária de 20 anos, depende do dinheiro dos pais para pagar suas despesas mensais e tem o hábito de gastá-lo sem controle. Ela está ciente de que precisa desenvolver uma melhor educação financeira para se tornar mais independente e responsável.  
+ 
+Gustavo, um jovem de 22 anos, acaba de receber uma herança e está gastando todo o dinheiro de uma só vez em viagens, festas e bens materiais. Ele está ciente de que precisa aprender mais sobre como administrar sua riqueza e proteger seu futuro financeiro.
+
+
+## Fluxo de usuário: 
+
+
+1. O usuário acessa a plataforma online de educação financeira. 
+
+
+2. O usuário é direcionado para uma página de boas-vindas e pode escolher entre opções de registro ou login. 
+
+
+3. Se o usuário já tem uma conta, ele faz o login e é direcionado para a página principal da plataforma. Se o usuário ainda não tem uma conta, ele pode se registrar preenchendo um formulário com informações pessoais básicas. 
+
+
+4. Na página principal da plataforma, o usuário tem acesso a uma visão geral dos principais tópicos de finanças pessoais, incluindo orçamento, dívidas, investimentos e planejamento financeiro. 
+
+
+5. O usuário pode selecionar um tópico específico e ter acesso a informações detalhadas, vídeos educacionais, infográficos e ferramentas práticas. 
+
+
+6. O usuário pode interagir com as ferramentas práticas, como calculadoras de orçamento e planejadores financeiros, e aplicar os conceitos financeiros aprendidos em sua própria vida. 
+
+
+7. O usuário pode participar da comunidade online, compartilhando experiências, dicas e conselhos financeiros com outros usuários.
