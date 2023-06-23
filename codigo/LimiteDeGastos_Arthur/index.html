@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Limite de Gastos</title>
+	
+</head>
+<body>
+    
+	<h1>Limite de Gastos</h1>
+	<div id="gastos"  method="post" action="https://postman-echo.com/post"> 
+		<p>
+        <label for="limite">Insira o valor limite de gastos:</label><br>
+        </p>   	
+        <input type="text" id="limite" name="limite">
+		<button type="submit" id="salvarLimite">Salvar</button>
+	</div>
+    <h1>Meu limite atual:</h1>
+	<div id="tela"></div>
+	<button id="btnMostrarDados">Limites Antigos</button>
+	<div id="tela2"></div>
+    <script src="script.js"></script>
+</body>
+</html>
