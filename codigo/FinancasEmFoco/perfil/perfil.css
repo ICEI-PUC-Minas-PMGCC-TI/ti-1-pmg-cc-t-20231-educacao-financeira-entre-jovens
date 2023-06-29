@@ -6,12 +6,12 @@ main{
 }
 
 .dadosUsuario{
-    border-radius: 12px;
+    
     height: 300px;
     width: 600px;
     grid-template-columns: repeat(3, 1fr);
     display: flex;
-    background-color: #FFEECA;
+    background-color: #6CC3D5;
     margin: 10px auto;
     border-style: solid;
     border-color: #1a447e;
@@ -30,10 +30,10 @@ main{
 
 .funcionalidades{
     justify-content: center;
-    border-radius: 12px;
+    
     grid-template-columns: repeat(2, 1fr);
     display: flex;
-    background-color: #FFEECA;
+    background-color: #6CC3D5;
     margin: 20px auto;
     color: black;
     border-style: solid;

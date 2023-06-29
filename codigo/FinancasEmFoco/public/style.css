@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #006FA5;
+    background-color: #0D253F;
   }
 
 header{
@@ -11,12 +11,12 @@ header{
     width: 100%;
     margin: 0;
     padding: 1rem 0;
-    background-color: #1a447e;
+    background-color: #6CC3D5;
     display: flex;
 }
 
 .NomeApp{
-    color: #DAA520;
+    color: black;
     font-family: sans-serif;
     margin-left: 20px;
 }
