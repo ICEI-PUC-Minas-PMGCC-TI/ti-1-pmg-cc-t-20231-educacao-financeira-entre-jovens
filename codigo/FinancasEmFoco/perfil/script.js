@@ -25,9 +25,9 @@ function incluirLimite() {
 
   // Incluir um novo limite
   let strLimite = document.getElementById('limite').value;
-  
-  // Verificar se o input é um número
-  if (!isNaN(strLimite)) {
+
+  // Verificar se o input é um número e não está vazio
+  if (!isNaN(strLimite) && strLimite.trim() !== '') {
     let novoLimite = {
       limite: parseFloat(strLimite)
     };
