@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="..\public\style.css" rel="stylesheet">
     <link href="dinheiro.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,24 @@
             <a href="..\dinheiro\dinheiro.html"><img src="..\public\dinheiroIcon.png"></a>
         </div>
     </header>
-    <p>oi glr</p>
+    <div id="titulomaneiro">
+    <h1 id="gastos123">SEUS GASTOS</h1>
+    </div>
+    <div id="direitap">
+    <div id="lista123">
+        <h1>Lista de Gastos</h1>
+    
+        <ul id="gastos">
+          <!-- Os gastos serão adicionados aqui -->
+        </ul>
+    
+        <div>
+          <input type="text" id="nomeGasto" placeholder="Nome do Gasto">
+          <input type="number" id="valorGasto" placeholder="Valor do Gasto">
+          <button onclick="adicionarGasto()">Adicionar Gasto</button>
+        </div>
+      </div>
+    </div>
+      <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+#lista123 
+{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 10px;
+    background-color: #6CC3D5;
+    position: fixed; 
+}
+  
+  #lista123 ul 
+{
+    list-style-type: none;
+    padding: 0; 
+}
+  
+  #lista123 li 
+{
+    margin-bottom: 10px;
+}
+  
+  input[type="text"],
+  input[type="number"],
+  button 
+{
+    display: block;
+    margin-bottom: 10px;
+    background-color: #FDB813;
+}
+  
+  button 
+{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+  #gastos123
+{
+  width: 20%;
+  background-color: #FDB813;
+  text-align: center;
+  margin-top: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#titulomaneiro
+{
+  justify-content: center;
+  display: flex;
+}
+#direitap {
+  height: 40%;
+  width: 12%;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+  margin-right: 50px;
+}
