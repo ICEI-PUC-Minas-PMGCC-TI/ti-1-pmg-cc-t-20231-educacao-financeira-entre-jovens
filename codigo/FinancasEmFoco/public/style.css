@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #a7cef3;
+  }
+
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #1a447e;
+    display: flex;
+}
+
+.NomeApp{
+    color: #DAA520;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.headerIcons{
+    margin-left:40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.headerIcons img{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
