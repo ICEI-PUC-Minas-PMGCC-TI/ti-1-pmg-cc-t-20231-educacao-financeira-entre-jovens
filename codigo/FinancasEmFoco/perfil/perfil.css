@@ -11,10 +11,11 @@ main{
     width: 600px;
     grid-template-columns: repeat(3, 1fr);
     display: flex;
-    background-color: #6CC3D5;
     margin: 10px auto;
-    border-style: solid;
-    border-color: #1a447e;
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
 }
 
 .dadosUsuario .texto {
@@ -25,7 +26,7 @@ main{
 .dadosUsuario img{
     margin: auto 20px;
     height: 200px;
-    width: 150px;
+    width: 170px;
 }
 
 .funcionalidades{
@@ -33,11 +34,12 @@ main{
     
     grid-template-columns: repeat(2, 1fr);
     display: flex;
-    background-color: #6CC3D5;
     margin: 20px auto;
     color: black;
-    border-style: solid;
-    border-color: #1a447e;
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
 }
 
 .funcionalidades .dicas {
