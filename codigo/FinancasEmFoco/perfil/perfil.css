@@ -1,0 +1,58 @@
+main{
+    font-family: sans-serif;
+    justify-content: center;
+    margin: 150px 40px;
+    display: grid;
+}
+
+.dadosUsuario{
+    border-radius: 12px;
+    height: 300px;
+    width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    background-color: #FFEECA;
+    margin: 10px auto;
+    border-style: solid;
+    border-color: #1a447e;
+}
+
+.dadosUsuario .texto {
+    margin: auto 10px;
+    color: black;
+}
+
+.dadosUsuario img{
+    margin: auto 20px;
+    height: 200px;
+    width: 150px;
+}
+
+.funcionalidades{
+    justify-content: center;
+    border-radius: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    background-color: #FFEECA;
+    margin: 20px auto;
+    color: black;
+    border-style: solid;
+    border-color: #1a447e;
+}
+
+.funcionalidades .dicas {
+    width: 400px;
+    height: auto;
+    margin: 40px 90px;
+}
+
+.funcionalidades .limiteDiv {
+    margin: 40px 90px;
+}
+
+.destaque {
+    background-color: #111d29;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 12px;
+  }

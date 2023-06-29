@@ -1,10 +1,11 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #a7cef3;
+    background-color: #006FA5;
   }
 
 header{
+    justify-content: center;
     top: 0;
     position: fixed;
     width: 100%;

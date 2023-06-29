@@ -17,6 +17,44 @@
             <a href="..\dinheiro\dinheiro.html"><img src="..\public\dinheiroIcon.png"></a>
         </div>
     </header>
-    
+    <main>
+      <div class="dadosUsuario">
+        <img src="fotoUsuario.jpg">
+        <div class="texto">
+        <p>Nome:</p>
+        <p>Senha:</p>
+        </div>
+      </div>
+      <div class="funcionalidades">
+        <div class="dicas">
+            <div>
+                <label for="search-input">Pesquisa:</label>
+                <input type="text" id="search-input">
+                <button class="pesquisar" onclick="pesquisar()">Destacar</button>
+              </div>
+            
+              <div id="dicas-list">
+                <!-- Dicas serão adicionadas dinamicamente aqui -->
+              </div>
+            
+        </div>
+        <div class="limiteDiv">
+            <div id="gastos"  method="post" action="https://postman-echo.com/post"> 
+                <p>
+                <label for="limite">Insira o valor limite de gastos:</label><br>
+                </p>   	
+                <input type="text" id="limite" name="limite">
+                <button type="submit" id="salvarLimite">Salvar</button>
+            </div>
+            <p>Meu limite atual:</p>
+            <div id="telaLimite"></div>
+            <button id="btnMostrarDados">Limites Antigos</button>
+            <div id="telaLimite2"></div>
+        </div>
+      </div>
+    </main>
 </body>
+
+<script src="script.js"></script>
+
 </html>
