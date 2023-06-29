@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Finança</title>
+</head>
+<body>
+    <div id="all">
+        <h1 id="titulo"> Simulador de Finanças</h1>
+        <div class="simulador">
+          <h2>Simulador de Parcelas</h2>
+          <table>
+            <tr>
+              <td><label for="valorTotal">Valor Total:</label></td>
+              <td><input type="number" id="valorTotal"></td>
+            </tr>
+            <tr>
+              <td><label for="numParcelas">Número de Parcelas:</label></td>
+              <td><input type="number" id="numParcelas"></td>
+            </tr>
+          </table>
+        
+          <button onclick="calcularParcelas()">Calcular Parcelas</button>
+        
+          <div id="resultadoParcelas"></div>
+        </div>
+      
+        <div class="simulador">
+          <h2>Simulador de Juros</h2>
+          <table>
+            <tr>
+              <td><label for="valorPrincipal">Valor Principal:</label></td>
+              <td><input type="number" id="valorPrincipal"></td>
+            </tr>
+            <tr>
+              <td><label for="taxaJuros">Taxa de Juros (%):</label></td>
+              <td><input type="number" id="taxaJuros"></td>
+            </tr>
+            <tr>
+              <td><label for="periodo">Período (meses):</label></td>
+              <td><input type="number" id="periodo"></td>
+            </tr>
+          </table>
+        
+          <button onclick="calcularJurosSimples()">Calcular Juros Simples</button>
+          <div id="resultadoSimples"></div>
+        
+          <button onclick="calcularJurosCompostos()">Calcular Juros Compostos</button>
+          <div id="resultadoComposto"></div>
+          <div id="jurosCompostos"></div>
+        </div>
+      
+        <button onclick="limparResultados()">Limpar Cálculo</button>
+        <button onclick="salvarResultados()">Salvar Resultados</button>
+        <button onclick="apagarResultados()">Apagar Resultados</button>
+        <div id="resultadosSalvos"></div>
+      </div>
+
+    <script src="juros.js"></script>
+    <script src="parcela.js"></script>
+    <script src="salvar.js"></script>
+</body>
+</html>

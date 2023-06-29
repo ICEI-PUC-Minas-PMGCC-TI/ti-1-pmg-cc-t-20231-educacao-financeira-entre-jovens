@@ -1,0 +1,5 @@
+nome do gasto: Carro valor do gasto: 1200
+nome do gasto: Casa valor: 550
+nome do gasto: LoL valor: 500
+nome do gasto: Agua valor: 150
+nome do gasto: Luz valor: 100
