@@ -1,0 +1,1 @@
+Storage {dadosGastos: '[{"nome":"Carro","valor":1200},{"nome":"Casa","valor":550},{"nome":"LoL","valor":500},{"nome":"Agua","valor":150},{"nome":"Luz","valor":100}]', length: 1}
