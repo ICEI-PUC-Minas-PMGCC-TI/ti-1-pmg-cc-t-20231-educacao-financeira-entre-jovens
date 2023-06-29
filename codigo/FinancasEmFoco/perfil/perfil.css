@@ -9,7 +9,7 @@ main{
     border-radius: 12px;
     height: 300px;
     width: 600px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     display: flex;
     background-color: #FFEECA;
     margin: 10px auto;
@@ -41,6 +41,7 @@ main{
 }
 
 .funcionalidades .dicas {
+    align-items: center;
     width: 400px;
     height: auto;
     margin: 40px 90px;
@@ -51,7 +52,7 @@ main{
 }
 
 .destaque {
-    background-color: #111d29;
+    background-color: #eef06d;
     padding: 5px;
     margin: 10px 0;
     border-radius: 12px;
