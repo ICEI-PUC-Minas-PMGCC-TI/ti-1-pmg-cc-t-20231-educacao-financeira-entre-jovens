@@ -61,7 +61,7 @@
   margin-right: 40px;
 }
 #esquerdap {
-  height: 40%;
+  height: auto;
   width: 30%;
   display: inline-block;
   position: fixed;
@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: auto;
+  height: 40%;
   width: auto;
   border: 2px solid black;
   border-radius: 10px;
