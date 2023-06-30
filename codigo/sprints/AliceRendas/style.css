@@ -1,0 +1,175 @@
+h1 {
+    margin-left: 40%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-align: left;
+    
+  }
+  #tituloRenda{
+    margin-left: 35%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 15%;
+  }
+  
+  #rentaAtiva {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+  }
+  
+  #rendaPassiva {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+  
+  #rendaVitalicia {
+    margin: 20px 100px 50px 500px;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitulo {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button#btnSalvar {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 10px;
+  }
+  
+  button#btnEditar {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 10px;
+  }
+  
+  button#btnExcluir {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 10px;
+  }
+
+  button#btnImprime {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 10px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+  }
+  
+  header {
+    background-color: #6CC3D5;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1980px;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  .sidebar {
+    background-color: #0D253F;
+    color: #EDEDED;
+    padding: 30px;
+    text-align: flex;
+    width: 200px;
+    position: all;
+    
+  }
+  
+  .content {
+    background-color: #FFFFFF;
+    padding: 50px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  footer {
+    background-color: #6CC3D5;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+  
+  .tituloPassiva{
+    margin: 25px 40px 25px 0px;
+  }
+  
+  #tela {
+    background-color: green;
+  }

@@ -1,0 +1,201 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Estilos do header */
+header {
+  background-color: #6CC3D5;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Estilos da sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #0D253F;
+  color: #EDEDED;
+  padding: 30px;
+  text-align: flex;
+  width: 200px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu li i {
+  margin-right: 10px;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tituloRenda {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+/* Estilos do calendário */
+.conteudo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendario {
+  text-align: center;
+}
+
+.calendario h3 {
+  margin-top: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.calendario table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.calendario thead td {
+  height: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #0D253F;
+  padding: 10px;
+}
+
+.calendario tbody td {
+  cursor: pointer;
+  border: 1px solid #0D253F;
+  padding: 10px;
+}
+
+.calendario tbody td:hover {
+  background-color: #6CC3D5;
+  color: #fff;
+}
+
+.calendario .dia-atual {
+  background-color: #6CC3D5;
+  color: #fff;
+}
+
+.btn-ant,
+.btn-pro {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 2px solid #0D253F;
+  border-radius: 50%;
+  color: #0D253F;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ant:hover,
+.btn-pro:hover {
+  background-color: #0D253F;
+  color: #fff;
+}
+
+/* Estilos dos botões */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+  
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button#btnSalvar {
+  position: flex;
+  bottom: 20px;
+  right: 20px;
+  margin-left: 10px;
+}
+
+button#btnEditar {
+  position: flex;
+  bottom: 20px;
+  right: 20px;
+  margin-left: 10px;
+}
+
+button#btnExcluir {
+  position: flex;
+  bottom: 20px;
+  right: 20px;
+  margin-left: 10px;
+}
+
+button#btnImprime {
+  position: flex;
+  bottom: 20px;
+  right: 20px;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #6CC3D5;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0%;
+}

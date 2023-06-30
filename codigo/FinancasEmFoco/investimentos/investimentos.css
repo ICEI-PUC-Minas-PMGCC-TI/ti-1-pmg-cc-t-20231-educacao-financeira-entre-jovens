@@ -1,0 +1,51 @@
+main{
+    font-family: sans-serif;
+    justify-content: center;
+    margin: 150px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calculadora{
+    height: 400px;
+    width: auto;
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    margin: 10px auto;
+    background-color: #ffffff80;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    float: right;
+}
+
+.simulador{
+    display: grid;
+}
+
+.limpar{
+    display: grid;
+    padding-top: 10px;
+    
+}
+
+.investimentosDiv{
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    height:430px;
+    width: auto;
+    margin: 10px 40px;
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    float: right;
+    gap: 30px;
+    
+}
+
+.parte2{
+    overflow: auto;
+}

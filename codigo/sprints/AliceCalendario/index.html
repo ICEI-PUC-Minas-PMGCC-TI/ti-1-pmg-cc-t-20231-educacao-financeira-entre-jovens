@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sprint2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Finanças em Foco</h1>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul class="sidebar-menu">
+        <li><i class="fas fa-home"></i> Início</li>
+        <li><i class="fas fa-user"></i> Perfil</li>
+        <li><i class="fas fa-chart-simple"></i> Investimentos</li>
+        <li><i class="fas fa-cog"></i> Configurações</li>
+        <li><i class="fas"></i> Renda</li>
+      </ul>
+    </div>
+
+    <main>
+      <h1 id="tituloRenda">Calendario de pagamentos</h1>
+
+      <div class="conteudo">
+        <div class="calendario">
+
+          <head>
+            <h3 id="mes">Setembro</h3>
+            <a class="btn-ant" id="btn_prev"><</a>
+                <a class="btn-pro" id="btn_next">></a>
+          </head>
+          <table>
+            <thead>
+              <tr>
+                <td>Dom</td>
+                <td>Seg</td>
+                <td>Ter</td>
+                <td>Qua</td>
+                <td>Qui</td>
+                <td>Sex</td>
+                <td>Sab</td>
+              </tr>
+            </thead>
+            <tbody id="dias">
+              <tr>
+                <td class="mes-anterior">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td class="dia-atual">12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td class="event">17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+              </tr>
+              <tr>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td class="priximo-mes">1</td>
+              <td class="priximo-mes">2</td>
+              <td class="priximo-mes">3</td>
+              <td class="priximo-mes">4</td>
+              </tr>
+              <div class="explicacao">
+                <h4>Digite abaixo o valor do pagamento que sera feito</h4>
+                <input class="inputs required" type="number" id="valor" style="width:150px" style="height: 200px" placeholder="Digite aqui...R$">
+                <h4>Digite a data limete para efetuar o pagamento</h4>
+                <input class="inputs required" type="number" id="data" style="width:150px" style="height: 200px" placeholder="xx/xx/20xx">
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="buttonContainer">
+        <button id="btnSalvar">Salvar renda</button>
+        <button id="btnEditar">Editar renda</button>
+        <button id="btnExcluir">Excluir renda</button>
+        <button id="btnImprime">Imprime Dados</button>
+        <div id="tela"></div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2023 Finanças em Foco. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

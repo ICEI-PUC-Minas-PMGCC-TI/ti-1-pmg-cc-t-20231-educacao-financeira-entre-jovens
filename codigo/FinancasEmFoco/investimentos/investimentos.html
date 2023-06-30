@@ -17,6 +17,62 @@
             <a href="..\perfil\perfil.html"><img src="..\public\profileIcon.png"></a>
         </div>
     </header>
+
+    <main>
+        <div class="calculadora">
+        <div class="parcelasDiv">
+           <div class="simulador">
+            <h2>Simulador de Parcelas</h2>
+            <label for="valorTotal">Valor Total:</label>
+            <input type="number" id="valorTotal">
+            <label for="numParcelas">Número de Parcelas:</label>
+            <input type="number" id="numParcelas">
+            <button onclick="calcularParcelas()">Calcular Parcelas</button>
+            <div id="resultadoParcelas"></div>
+          </div>
+        </div>
+      
+        <div class="simulador">
+          <h2>Simulador de Juros</h2>
+            <label for="valorPrincipal">Valor Principal:</label>
+            <input type="number" id="valorPrincipal">
+            <label for="taxaJuros">Taxa de Juros (%):</label>
+            <input type="number" id="taxaJuros">
+            <label for="periodo">Período (meses):</label>
+            <input type="number" id="periodo">
+          <button onclick="calcularJurosSimples()">Calcular Juros Simples</button>
+          <div id="resultadoSimples"></div>
+          <button onclick="calcularJurosCompostos()">Calcular Juros Compostos</button>
+          <div id="resultadoComposto"></div>
+          <div id="jurosCompostos"></div>
+        </div>
+        <div class="limpar"><button onclick="limparResultados()">Limpar Resultados</button></div>
+        
+        <div id="resultadosSalvos"></div>
+    </div>
+
+        
+    <div class="investimentosDiv" id="gastos" method="post" action="https://postman-echo.com/post">
+        <div class="parte1">
+            <h1>Investimentos:</h1> 
+            <p>
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name">
+              </p>
+              <p>
+                <label for="value">Valor:</label><br>
+                <input type="text" id="value" name="value">
+              </p>
+              <button type="submit" id="salvarLimite">Salvar</button>
+        </div>
+        <div class="parte2"> <div id="tela"></div> </div>
+
+        
+      
+    </div>
+
+    <script src="investimento.js"></script>
+    </main>
     
 </body>
 </html>

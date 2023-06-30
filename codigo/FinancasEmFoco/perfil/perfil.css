@@ -6,7 +6,6 @@ main{
 }
 
 .dadosUsuario{
-    
     height: 300px;
     width: 600px;
     grid-template-columns: repeat(3, 1fr);
@@ -14,7 +13,7 @@ main{
     margin: 10px auto;
     background-color: #ffffff80;
     padding: 30px;
-    border-radius: 4%;
+    border-radius: 5px;
     box-shadow: 3px 3px 1px 0px #00000060;
 }
 
@@ -38,7 +37,7 @@ main{
     color: black;
     background-color: #ffffff80;
     padding: 30px;
-    border-radius: 4%;
+    border-radius: 5px;
     box-shadow: 3px 3px 1px 0px #00000060;
 }
 

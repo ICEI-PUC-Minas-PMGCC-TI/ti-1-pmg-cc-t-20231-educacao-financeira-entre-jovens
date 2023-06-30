@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Finanças em Foco</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="caminho/para/animate.min.css">
+    </head>
+    <header>
+        <h1>Finanças em Foco</h1>
+    </header>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li>
+                        <i class="fas fa-home"></i> <button id="inicio-button">Início</button>
+                    </li>
+                    <li>
+                        <i class="fas fa-user"></i> Perfil
+                    </li>
+                    <div class="login-bar">
+                        <input type="text" id="username-input" placeholder="Nome de usuário">
+                        <input type="password" id="password-input" placeholder="Senha">
+                        <button id="login-button">Login</button>
+                    </div>
+                    <li>
+                        <i class="fas fa-thin fa-money-bill"></i>  <button id="inicio-button">Investimentos</button>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> <button id="inicio-button">Configurações</button>
+                    </li>
+                    <li>
+                        <i class="fas fa-thin fa-money-bill"></i> <button id="inicio-button">Renda</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <script src="script.js"></script>
+                <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+                <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+                <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+                <h1>Renda Mensal -> Lucros/Dívidas</h1>
+                <h1>Valores em R$</h1>
+                <div id="chartdiv"></div>
+                <script src="javascript.js"></script>
+                <div id="warningDiv"></div>
+                <h1></h1>
+            </body>
+            <footer>
+                <p>© 2023 Finanças em Foco. Todos os direitos reservados.</p>
+            </footer>
+        </html>
