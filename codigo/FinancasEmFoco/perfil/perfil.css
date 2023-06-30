@@ -52,6 +52,8 @@ main{
 
 .funcionalidades .limiteDiv {
     margin: 40px 90px;
+    overflow: auto;
+    height: auto;
 }
 
 .destaque {
