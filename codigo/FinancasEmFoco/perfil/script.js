@@ -172,7 +172,7 @@ function sair ()
 {
     localStorage.removeItem('token');
     localStorage.removeItem('userLogado');
-    window.location.href = 'login.html';
+    window.location.href = '../cadastro-login/login.html';
     
 }
 

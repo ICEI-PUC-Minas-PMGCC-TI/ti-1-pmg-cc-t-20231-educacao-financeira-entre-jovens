@@ -31,7 +31,7 @@ main{
 
 .funcionalidades{
     justify-content: center;
-    
+    height: 400px;
     grid-template-columns: repeat(2, 1fr);
     display: flex;
     margin: 20px auto;
@@ -47,6 +47,7 @@ main{
     width: 400px;
     height: auto;
     margin: 40px 90px;
+    overflow: auto;
 }
 
 .funcionalidades .limiteDiv {
@@ -59,3 +60,28 @@ main{
     margin: 10px 0;
     border-radius: 12px;
   }
+
+   /* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+ 
