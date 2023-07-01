@@ -43,7 +43,41 @@
               </div>
         </div>
         <div class="calendarioDiv">
-
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor">
+            <br>
+            <button onclick="pinOnCalendar()">Pin on Calendar</button>
+        
+            <div id="calendarContainer">
+                <button onclick="previousMonth()">&lt;</button>
+                <h2 id="monthYear"></h2>
+                <button onclick="nextMonth()">&gt;</button>
+        
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div id="selectedDate"></div>
+            <div id="pins"></div>
         </div>
     </main>
 

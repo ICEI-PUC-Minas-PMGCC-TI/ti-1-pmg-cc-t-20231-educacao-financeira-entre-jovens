@@ -229,3 +229,153 @@ function limparCampos() {
   document.getElementById("nomeRenda").value = "";
   document.getElementById("valorRenda").value = "";
 }
+
+var selectedDate = null;
+        var pins = [];
+
+        function pinOnCalendar() {
+            var dateInput = document.getElementById("date");
+            var nameInput = document.getElementById("name");
+            var valorInput = document.getElementById("valor");
+
+            var dateValue = dateInput.value;
+            var nameValue = nameInput.value;
+            var valorValue = valorInput.value;
+
+            var date = new Date(dateValue + "T00:00:00");
+            var day = date.getDate();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+
+            var pin = {
+                date: new Date(year, month, day),
+                name: nameValue,
+                valor: valorValue
+            };
+
+            pins.push(pin);
+
+            if (selectedDate && selectedDate.getTime() === pin.date.getTime()) {
+                selectedDate = null;
+            } else {
+                selectedDate = pin.date;
+            }
+
+            renderCalendar();
+            renderPins();
+
+            // Clear input values
+            dateInput.value = "";
+            nameInput.value = "";
+            valorInput.value = "";
+        }
+
+        function previousMonth() {
+            var currentDate = new Date(selectedDate);
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            selectedDate = currentDate;
+            renderCalendar();
+            renderPins();
+        }
+
+        function nextMonth() {
+            var currentDate = new Date(selectedDate);
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            selectedDate = currentDate;
+            renderCalendar();
+            renderPins();
+        }
+
+        function renderCalendar() {
+            var calendar = document.getElementById("calendar");
+            var tbody = calendar.getElementsByTagName("tbody")[0];
+            tbody.innerHTML = '';
+
+            var currentDate = selectedDate ? new Date(selectedDate) : new Date();
+
+            var month = currentDate.getMonth();
+            var year = currentDate.getFullYear();
+
+            document.getElementById("monthYear").innerText = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(currentDate);
+
+            var firstDay = new Date(year, month, 1);
+            var lastDay = new Date(year, month + 1, 0);
+
+            var numRows = Math.ceil((lastDay.getDate() + firstDay.getDay()) / 7);
+            var dayCounter = 1;
+
+            for (var i = 0; i < numRows; i++) {
+                var row = document.createElement("tr");
+                for (var j = 0; j < 7; j++) {
+                    var cell = document.createElement("td");
+                    if (i === 0 && j < firstDay.getDay()) {
+                        cell.innerHTML = "";
+                    } else if (dayCounter > lastDay.getDate()) {
+                        cell.innerHTML = "";
+                    } else {
+                        cell.innerHTML = dayCounter;
+                        cell.addEventListener("click", onDateClick);
+
+                        var pin = pins.find(function(pin) {
+                            return pin.date.getFullYear() === year && pin.date.getMonth() === month && pin.date.getDate() === dayCounter;
+                        });
+
+                        if (pin) {
+                            cell.classList.add("pin");
+                        }
+
+                        dayCounter++;
+                    }
+                    row.appendChild(cell);
+                }
+                tbody.appendChild(row);
+            }
+        }
+
+        function renderPins() {
+            var selectedDateContainer = document.getElementById("selectedDate");
+            selectedDateContainer.innerHTML = '';
+
+            if (selectedDate) {
+                var selectedDateText = document.createElement("h3");
+                selectedDateText.innerText = "Selected Date: " + selectedDate.toDateString();
+                selectedDateContainer.appendChild(selectedDateText);
+
+                var pinsForDate = pins.filter(function(pin) {
+                    return pin.date.getTime() === selectedDate.getTime();
+                });
+
+                if (pinsForDate.length > 0) {
+                    var pinsList = document.createElement("ul");
+                    pinsForDate.forEach(function(pin) {
+                        var listItem = document.createElement("li");
+                        var pinInfo = document.createElement("span");
+                        pinInfo.innerText = pin.name + ": " + pin.valor;
+                        var pinDate = document.createElement("span");
+                        pinDate.innerText = pin.date.toDateString();
+                        listItem.appendChild(pinInfo);
+                        listItem.appendChild(document.createElement("br"));
+                        listItem.appendChild(pinDate);
+                        pinsList.appendChild(listItem);
+                    });
+                    selectedDateContainer.appendChild(pinsList);
+                } else {
+                    var noPinsMessage = document.createElement("p");
+                    noPinsMessage.innerText = "No pins for selected date.";
+                    selectedDateContainer.appendChild(noPinsMessage);
+                }
+            }
+        }
+
+        function onDateClick(event) {
+            var clickedDate = parseInt(event.target.innerHTML);
+            var currentDate = selectedDate ? new Date(selectedDate) : new Date();
+            currentDate.setDate(clickedDate);
+            selectedDate = currentDate;
+            renderCalendar();
+            renderPins();
+        }
+
+        // Initial rendering
+        renderCalendar();
+        renderPins();
