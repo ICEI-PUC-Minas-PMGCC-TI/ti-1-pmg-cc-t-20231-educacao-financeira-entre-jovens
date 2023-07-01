@@ -96,14 +96,24 @@ th, td {
 }
 
 .calendarioDiv{
-  height: 700px;
-    width: 300px;
-   /* grid-template-columns: repeat(3, 1fr); */
+  height: auto;
+    width: auto;
+    grid-template-columns: repeat(2, 1fr); 
     display: grid;
     margin: 10px auto;
     background-color: #ffffff80;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 3px 3px 1px 0px #00000060;
+    gap: 50px;
+    margin-top: 50px;
+    grid-column: span 2
 }
 
+.inputsCalendario{
+  display: grid;
+}
+
+.btncalendario{
+  display: flex;
+}

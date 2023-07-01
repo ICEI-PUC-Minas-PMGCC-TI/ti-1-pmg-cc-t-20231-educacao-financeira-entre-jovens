@@ -43,6 +43,7 @@
               </div>
         </div>
         <div class="calendarioDiv">
+            <div class="inputsCalendario">
             <label for="date">Date:</label>
             <input type="date" id="date">
             <br>
@@ -53,12 +54,15 @@
             <input type="text" id="valor">
             <br>
             <button onclick="pinOnCalendar()">Pin on Calendar</button>
+        </div>
         
             <div id="calendarContainer">
                 
                 <h2 id="monthYear"></h2>
+                <div class="btncalendario">
                 <button onclick="previousMonth()">&lt;</button>
                 <button onclick="nextMonth()">&gt;</button>
+            </div>
         
                 <table id="calendar">
                     <thead>
