@@ -18,6 +18,7 @@ main{
     border-radius: 5px;
     box-shadow: 3px 3px 1px 0px #00000060;
     float: right;
+    overflow: auto;
 }
 
 .simulador{
