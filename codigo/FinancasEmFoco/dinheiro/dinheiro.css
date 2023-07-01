@@ -60,50 +60,45 @@
   text-align: center;
   margin-right: 40px;
 }
-#esquerdap {
-  height: auto;
-  width: 30%;
-  display: inline-block;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  text-align: center;
-  margin-right: 40px;
-}
-#all {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 40%;
-  width: auto;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #6CC3D5;
-  margin-left: 10px;
-}
 
-.simulador {
-  width: calc(50% - 5px);
-}
-
-button {
-  display: block;
-  background-color: #FDB813;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#titulo{
-  text-align: center;
-  color: #FDB813;
-  margin-left: 110px;
-  margin-right: 110px;
-  text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
-}
 body
 {
   font-family: sans-serif;
+}
+
+@media screen and (max-width:1250px)
+{
+  #direitap
+  {
+    margin-right: 40px;
+    width: 15%;
+  }
+  #gastos123
+  {
+    width: 30%;
+  }
+}
+@media screen and (max-width:900px)
+{
+  #direitap
+  {
+    margin-right: 40px;
+    width: 25%;
+  }
+  #gastos123
+  {
+    width: 40%;
+  }
+}
+@media screen and (max-width:400px)
+{
+  #direitap
+  {
+    margin-right: 0;
+    width: 35%;
+  }
+  #gastos123
+  {
+    width: 40%;
+  }
 }
