@@ -80,3 +80,30 @@ button {
   margin-right: auto;
 }
 
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+.pin {
+  background-color: yellow;
+}
+#pins {
+  margin-top: 20px;
+}
+
+.calendarioDiv{
+  height: 700px;
+    width: 300px;
+   /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    margin: 10px auto;
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
