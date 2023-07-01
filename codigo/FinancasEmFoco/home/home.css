@@ -1,0 +1,82 @@
+
+main{
+    font-family: sans-serif;
+    justify-content: center;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+  
+  
+  .content {
+    width: 900px;
+    height: 600px;
+    padding: 55px;
+    text-align: center;
+    background-color: #ffffff80;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+  }
+   
+  #chartdiv{
+    width: auto;
+    height: 400px;
+    margin-bottom: 5%;
+  }
+  
+#warningDiv {
+  display: none;
+  background-color: #ff0404;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.listaRendas{
+  
+  height: 640px;
+    width: 300px;
+   /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    margin: 10px auto;
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    grid-template-rows: repeat(2,1fr);
+}
+
+  
+  
+  input[type="text"],
+  input[type="number"],
+  
+
+  button 
+{
+    margin-bottom: 10px;
+    background-color: #FDB813;
+}
+
+.comandos{
+  display:grid;
+}
+.resultados{
+  overflow: auto;
+  display: grid;
+}
+  
+
+
+button {
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: grid;
+  background-color: #FDB813;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

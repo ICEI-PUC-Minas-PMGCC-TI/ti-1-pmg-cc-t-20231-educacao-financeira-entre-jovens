@@ -6,7 +6,6 @@
     <link href="..\public\style.css" rel="stylesheet">
     <link href="dinheiro.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="styleS3.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,25 +18,45 @@
           <a href="..\perfil\perfil.html"><img src="..\public\profileIcon.png"></a>
         </div>
     </header>
-    <div id="titulomaneiro">
-    <h1 id="gastos123">SEUS GASTOS</h1>
+    <main>
+
+      <div class="grafico">
+        <script src="https://www.amcharts.com/lib/5/core.js"></script>
+    <script src="https://www.amcharts.com/lib/5/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/5/themes/Animated.js"></script>
+        <div class="content">
+       
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <div id="chartdiv"></div>
+    <script src="javascript.js"></script>
+    <div id="warningDiv"></div>
     </div>
-    <div id="direitap">
-    <div id="lista123">
-        <h1>Lista de Gastos</h1>
-    
+  </div>
+      <div class="listaGastos">
         
-    
-        <div>
+        <div class="comandos">
+          <h1>Lista de Gastos</h1>
           <input type="text" id="nomeGasto" placeholder="Nome do Gasto">
           <input type="number" id="valorGasto" placeholder="Valor do Gasto">
           <button onclick="adicionarGasto()">Adicionar Gasto</button>
         </div>
-        <ul id="gastos">
+        <div class="resultados"><ul id="gastos">
           <!-- Os gastos serão adicionados aqui -->
-        </ul>
+        </ul></div>
+        
       </div>
-    </div>
+
+    </main>
+
+    <footer>
+      <p>
+          Alice Azevedo, Arthur Gonçalves, Breno Amorim, Estevão Freitas, Luan Barbosa, Luiz Cortat </p>
+      <p>Ciència da Computação - PUC Minas</p>
+    </footer>
       <script src="script.js"></script>
 </body>
 </html>

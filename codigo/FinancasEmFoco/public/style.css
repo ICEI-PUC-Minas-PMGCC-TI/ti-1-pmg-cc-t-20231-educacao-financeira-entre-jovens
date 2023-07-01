@@ -1,5 +1,5 @@
 body{
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     background-color: #1a447e;
   }
@@ -13,6 +13,7 @@ header{
     padding: 1rem 0;
     background-color: #0f3161;
     display: flex;
+    z-index: 1;
 }
 
 .NomeApp{
@@ -55,4 +56,14 @@ header{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+  
+  footer {
+    background-color: #798897;
+    padding: 20px 0px;
+    text-align: center;
+    bottom:auto;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
   }

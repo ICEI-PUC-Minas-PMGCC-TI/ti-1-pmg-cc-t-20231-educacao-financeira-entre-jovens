@@ -17,6 +17,41 @@
             <a href="..\perfil\perfil.html"><img src="..\public\profileIcon.png"></a>
         </div>
     </header>
-    
+
+    <main>
+        <div class="content">
+            <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+            <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+            <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+            <h1>Lucro Mensal</h1>
+            <div id="chartdiv"></div>
+            <div id="warningDiv"></div>
+        </div>
+        <div class="rendasDiv">
+            <div class="listaRendas">
+        
+                <div class="comandos">
+                  <h1>Lista de Rendas</h1>
+                  <input type="text" id="nomeRenda" placeholder="Nome do Renda">
+                  <input type="number" id="valorRenda" placeholder="Valor do Renda">
+                  <button onclick="adicionarRenda()">Adicionar Renda</button>
+                </div>
+                <div class="resultados"><ul id="rendas">
+                  <!-- As rendas serão adicionados aqui -->
+                </ul></div>
+                
+              </div>
+        </div>
+        <div class="calendarioDiv">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Alice Azevedo, Arthur Gonçalves, Breno Amorim, Estevão Freitas, Luan Barbosa, Luiz Cortat </p>
+        <p>Ciència da Computação - PUC Minas</p>
+      </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
