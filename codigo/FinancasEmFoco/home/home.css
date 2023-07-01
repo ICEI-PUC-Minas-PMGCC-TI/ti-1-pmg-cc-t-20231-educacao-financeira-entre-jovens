@@ -96,7 +96,7 @@ th, td {
 }
 
 .calendarioDiv{
-  height: auto;
+  height: 400px;
     width: auto;
     grid-template-columns: repeat(2, 1fr); 
     display: grid;
@@ -116,4 +116,8 @@ th, td {
 
 .btncalendario{
   display: flex;
+}
+
+#calendarContainer{
+  overflow: auto;
 }
