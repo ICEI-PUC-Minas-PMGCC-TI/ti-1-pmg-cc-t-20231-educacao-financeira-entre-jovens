@@ -32,7 +32,7 @@ main{
     justify-content: center;
     height: 400px;
     grid-template-columns: repeat(2, 1fr);
-    display: flex;
+    display: grid;
     margin: 20px auto;
     color: black;
     background-color: #ffffff80;
@@ -77,4 +77,39 @@ main{
     background-color: #FDB813;
   }
 
- 
+  @media (max-width: 1000px) {
+    .funcionalidades {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .funcionalidades .dicas {
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: auto;
+    }
+    
+    .funcionalidades .limiteDiv {
+        margin: 0;
+        overflow: auto;
+        height: auto;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 150px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dadosUsuario{
+        height: auto;
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        margin: 10px auto;
+    }
+}
