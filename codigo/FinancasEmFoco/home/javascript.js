@@ -414,7 +414,7 @@ function renderPins() {
       selectedDateContainer.appendChild(pinsList);
     } else {
       var noPinsMessage = document.createElement("p");
-      noPinsMessage.innerText = "No pins for selected date.";
+      noPinsMessage.innerText = "Nenhum pagamento agendado.";
       selectedDateContainer.appendChild(noPinsMessage);
     }
   }
