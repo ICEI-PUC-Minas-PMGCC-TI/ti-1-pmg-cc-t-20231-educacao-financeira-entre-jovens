@@ -84,3 +84,58 @@ button {
 #chartdiv h1{
   margin-bottom: 50px;
 }
+@media screen and (min-width:30px) and (max-width: 700px)
+  {
+    footer {
+      background-color: #798897;
+      padding: 20px 0px;
+      text-align: center;
+      bottom:auto;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+  }
+  @media screen and (min-width:701px) and (max-width: 860px)
+  {
+    footer {
+      background-color: #798897;
+      padding: 20px 0px;
+      text-align: center;
+      bottom:auto;
+      margin-top: 100px;
+      position: absolute;
+      width: 1100px;
+      left: 0;
+      right: 0;
+    }
+  }
+  @media screen and (min-width:861px) and (max-width: 1100px)
+  {
+    footer {
+      background-color: #798897;
+      padding: 20px 0px;
+      text-align: center;
+      bottom:auto;
+      margin-top: 100px;
+      position: absolute;
+      width: 1300px;
+      left: 0;
+      right: 0;
+    }
+  }
+  @media screen and (min-width:1101px) and (max-width: 1300px)
+  {
+    footer {
+      background-color: #798897;
+      padding: 20px 0px;
+      text-align: center;
+      bottom:auto;
+      margin-top: 100px;
+      position: absolute;
+      width: 1500px;
+      left: 0;
+      right: 0;
+    }
+  }
