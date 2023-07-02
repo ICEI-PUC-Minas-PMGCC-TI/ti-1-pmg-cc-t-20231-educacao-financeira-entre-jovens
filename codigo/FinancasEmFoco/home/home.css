@@ -130,12 +130,20 @@ th, td {
   main{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      margin: 150px auto;
+      margin: 150px 0;
+      align-items: ceneter;
+      justify-content: center;
   }
 
   .calendarioDiv{
     grid-template-columns: repeat(1, 1fr);
     height: auto;
   }
-  
+
+  .content{
+    display:none;
+  }
+
+  .listaRendas{display: block;}
+
 }
