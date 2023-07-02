@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vídeos de Educação Financeira</title>
+    <link rel="stylesheet" type="text/css" href="Banco de dados.css">
+    <script src="dbfake.js"></script>
+</head>
+<body>
+    <h1>Vídeos de Educação Financeira</h1>
+    <button id="meuBotao" class="botao-estilizado" onclick="revelarURL()">RevelarURL</button>
+    <input type="text" id="caixaPesquisa" placeholder="Digite o nome do vídeo">
+    <button onclick="pesquisarVideo()">Pesquisar</button>
+<ul>
+    <li>
+        <h2>DICAS FINANCEIRAS que mudarão SUA MENTE! (Educação Financeira, Dívidas, Pé-de-Meia) - PRIMO POBRE</h2>
+        <p>Neste vídeo, você verá dicas para você conseguir ter mais controle sobre suas finanças.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/50tCu7gGN-Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+    <li>
+        <h2>Educação Financeira – Educação Financeira Para Iniciante! - Investindo Melhor</h2>
+        <p>Neste vídeo, você aprenderá conceitos básicos de educação financeira para iniciantes.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HzRK6wTSHHU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+    <li>
+        <h2>As SIMPLES Técnicas p/ GASTAR Menos Dinheiro (Educação Financeira | Ep. 01) - Investindo Melhor</h2>
+        <p>Neste vídeo, você irá aprender técnicas simples para gastar menos dinheiro e controlar melhor as finanças pessoais.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dF7K-fnOYF8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+    <li>
+        <h2>4 Pilares Comprovados p/ Acumular Dinheiro Rápido (A Regra dos 90 Dias) - Manual da Evolução</h2>
+        <p>Neste vídeo, você aprenderá sobre os 4 pilares comprovados para acumular dinheiro rapidamente.</p>
+        <iframe width="560" height="315" src="https://youtube.com/embed/cWTTXpaKUn4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </li>
+</ul>
+</ul>
+
+<script>
+    function revelarURL() {
+        var iframes = document.getElementsByTagName("iframe"); // Obtém todos os elementos <iframe>
+        var urls = [];
+
+        for (var i = 0; i < iframes.length; i++) {
+            var src = iframes[i].getAttribute("src"); // Obtém a URL do atributo src do iframe
+            urls.push(src); // Adiciona a URL ao array de URLs
+        }
+
+        var divURLs = document.getElementById("divURLs"); // Obtém o elemento <div> onde as URLs serão exibidas
+        divURLs.innerHTML = "URLs dos vídeos:<br>" + urls.join("<br>"); // Exibe as URLs dentro do elemento <div>
+    }
+</script>
+
+<div id="divURLs"></div>
+<script>
+    function pesquisarVideo() {
+        var caixaPesquisa = document.getElementById("caixaPesquisa");
+        var termoPesquisado = caixaPesquisa.value.toLowerCase(); // Obtém o valor da caixa de pesquisa em letras minúsculas
+
+        // Verifique o termo pesquisado e redirecione para o vídeo correspondente
+        if (termoPesquisado.includes("dicas financeiras")) {
+            window.location.href = "https://www.youtube.com/embed/50tCu7gGN-Q";
+        } else if (termoPesquisado.includes("educação financeira")) {
+            window.location.href = "https://www.youtube.com/embed/HzRK6wTSHHU";
+        } else if (termoPesquisado.includes("técnicas para gastar menos")) {
+            window.location.href = "https://www.youtube.com/embed/dF7K-fnOYF8";
+        } else if (termoPesquisado.includes("4 pilares comprovados")) {
+            window.location.href = "https://www.youtube.com/embed/cWTTXpaKUn4";
+        } else {
+            alert("Vídeo não encontrado");
+        }
+    }
+</script>
+    </body>
+    <script>
+        var req = new XMLHttpRequest();
+        var url = '';
+    
+        function processaDados() {
+            var dados = JSON.parse(req.responseText);
+            for (var i = 0; i < dados.videos.length; i++) {
+                var saida = '';
+                // Lógica de processamento dos dados aqui
+            }
+        }
+    </script>
+</html>

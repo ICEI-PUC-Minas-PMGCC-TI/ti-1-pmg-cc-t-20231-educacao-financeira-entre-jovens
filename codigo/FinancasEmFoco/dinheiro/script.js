@@ -1,3 +1,6 @@
+function reloadPage() {
+  location.reload();
+}
 function adicionarGasto() {
     var nomeGasto = document.getElementById("nomeGasto").value;
     var valorGasto = document.getElementById("valorGasto").value;
@@ -11,6 +14,7 @@ function adicionarGasto() {
       adicionarNaLista(gasto);
       salvarDadosNoLocalStorage();
       limparCampos();
+      reloadPage();
     }
   }
   
@@ -19,6 +23,7 @@ function adicionarGasto() {
     lista.removeChild(item);
   
     salvarDadosNoLocalStorage();
+    reloadPage();
   }
   
   function limparLista() {
@@ -65,7 +70,7 @@ function adicionarGasto() {
     var items = Array.from(lista.getElementsByTagName("li"));
   
     var dadosGastos = [];
-  
+    
     for (var i = 0; i < items.length; i++) {
       var item = items[i];
       var textoItem = item.textContent;
@@ -82,9 +87,13 @@ function adicionarGasto() {
     }
   
     var dadosGastosJSON = JSON.stringify(dadosGastos);
+ 
   
     localStorage.setItem("dadosGastos", dadosGastosJSON);
   }
+
+  var teste = localStorage.getItem("dadosGastos");
+  
   
   carregarDadosDoLocalStorage();
   
@@ -107,99 +116,53 @@ function adicionarGasto() {
 
 
   //grafico
+  console.log(teste);
 
-  document.addEventListener("DOMContentLoaded", function() {
-    var usernameInput = document.getElementById("username-input");
-    var passwordInput = document.getElementById("password-input");
-    var loginButton = document.getElementById("login-button");
-    var loginBar = document.querySelector(".login-bar");
-  
-    loginButton.addEventListener("click", function() {
-      var username = usernameInput.value;
-      var password = passwordInput.value;
-      
-      loginBar.innerHTML = "Bem-vindo, " + username + "! <button id='logout-button'>Logout</button>";
-  
-      var logoutButton = document.getElementById("logout-button");
-      logoutButton.addEventListener("click", function() {
-        loginBar.innerHTML = `<input type="text" id="username-input" placeholder="Nome de usuário">
-        <input type="password" id="password-input" placeholder="Senha">
-        <button id="login-button">Login</button>`;
-    
-  
-        usernameInput = document.getElementById("username-input");
-        passwordInput = document.getElementById("password-input");
-        loginButton = document.getElementById("login-button");
-        loginBar = document.querySelector(".login-bar");
-      });
-    });
-  });
   am5.ready(function() {
-    var dados = {
-      Faculdade: 1800,
-      Aluguel: 1000,
-      Alimentacao: 500,
-      Jogos: 900,
-      Transporte: 80,
-      Restante: 0,
-    };
-  
-    function atualizarGrafico() {
-      var root = am5.Root.new("chartdiv");
-      root.setThemes([am5themes_Animated.new(root)]);
-  
-      var chart = root.container.children.push(am5percent.PieChart.new(root, {
-        layout: root.verticalLayout
-      }));
-  
-      var series = chart.series.push(am5percent.PieSeries.new(root, {
-        valueField: "value",
-        categoryField: "category"
-      }));
-  
-      for (var key in dados) {
-        if (key !== "Restante") {
-          series.data.push({ value: dados[key], category: key });
-        }
-      }
-  
-      series.appear(1000, 100);
-    }
-  
-    function atualizarSalario(novoSalario) {
-      dados.Salario = novoSalario;
-      dados.Restante = dados.Salario - dados.Alimentacao - dados.Aluguel - dados.Faculdade - dados.Jogos - dados.Transporte;
-      atualizarGrafico();
-      exibirAvisoGastosExcessivos();
-    }
+
+    // Create root element
+    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+    var root = am5.Root.new("chartdiv");
+    
+    
+    // Set themes
+    // https://www.amcharts.com/docs/v5/concepts/themes/
+    root.setThemes([
+      am5themes_Animated.new(root)
+    ]);
+    
+    
+    // Create chart
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+    var chart = root.container.children.push(am5percent.PieChart.new(root, {
+      layout: root.verticalLayout
+    }));
+    
+    
+    // Create series
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+    var series = chart.series.push(am5percent.PieSeries.new(root, {
+      
+      categoryField: "nome",
+      valueField: "valor"
+    }));
+    
+    
+    // Set data
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+    var array = JSON.parse(teste);
  
-      function showWarning(message) {
-    var warningDiv = document.getElementById("warningDiv");
-    warningDiv.textContent = message;
-    warningDiv.style.display = "block";
-  }
-  
-  
-    showWarning("Atenção! Seus gastos estão excessivos!");
-  
-    document.addEventListener("DOMContentLoaded", function() {
-        var icons = document.querySelectorAll(".sidebar-menu i");
-      
-        for (var i = 0; i < icons.length; i++) {
-          icons[i].classList.add("animate__animated", "animate__fadeInLeft");
-        }
-      });
-      
-  
-    atualizarGrafico();
-  
-    var salarioInput = document.getElementById("salarioInput");
-    salarioInput.addEventListener("input", function() {
-      var novoSalario = parseFloat(salarioInput.value);
-      if (!isNaN(novoSalario)) {
-        atualizarSalario(novoSalario);
-      }
-    });
-  });
+    console.log(array);
+    
+    
+   
+    series.data.setAll(array);
+    console.log(series.data);
+    
+    // Play initial series animation
+    // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+    series.appear(1000, 100);
+    
+    }); // end am5.ready()
   
   

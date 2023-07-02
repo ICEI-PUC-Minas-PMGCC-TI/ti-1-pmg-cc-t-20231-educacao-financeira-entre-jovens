@@ -34,7 +34,7 @@ main{
 }
 
 .listaRendas{
-  
+  text-align: center;
   height: 640px;
     width: 300px;
    /* grid-template-columns: repeat(3, 1fr); */

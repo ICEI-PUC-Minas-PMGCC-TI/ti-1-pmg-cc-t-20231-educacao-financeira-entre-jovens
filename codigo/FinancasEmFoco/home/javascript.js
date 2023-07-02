@@ -1,5 +1,31 @@
 // grafico
-am5.ready(function () {
+function reloadPage() {
+  location.reload();
+}
+ am5.ready( function grafico() {
+  var dadosGastosJSON = localStorage.getItem("dadosGastos");
+  var resultado2 = 0;
+    if (dadosGastosJSON) {
+      var dadosGastos = JSON.parse(dadosGastosJSON);
+  
+      for (var i = 0; i < dadosGastos.length; i++) {
+        resultado2 = resultado2 + (dadosGastos[i].valor);
+      }
+    }
+
+  var dadosRendaJSON = localStorage.getItem("dadosRendas");
+  var resultado = 0;
+
+  
+    var dadosRenda = JSON.parse(dadosRendaJSON);
+  if (dadosRendaJSON){
+    for (var i = 0; i < dadosRenda.length; i++) {
+      resultado = resultado + (dadosRenda[i].valor); 
+    }
+  }
+
+  var lucro = resultado - resultado2;
+    console.log(dadosRenda);
 
   // Create root element
   var root = am5.Root.new("chartdiv");
@@ -70,6 +96,8 @@ am5.ready(function () {
     return chart.get("colors").getIndex(series.columns.indexOf(target));
   });
 
+  
+
 
   // Set data
   var data = [{
@@ -95,16 +123,16 @@ am5.ready(function () {
     value: -100 
   }, {
     month: "Julho",
-    value: 711
+    value: lucro
   }, {
     month: "Agosto",
-    value: 60
+    value: 0
   }, {
     month: "Setembro",
-    value: -25
+    value: 0
   }, {
     month: "Outubro",
-    value: -62
+    value: 0
   },
 
 
@@ -144,6 +172,7 @@ function removerDaLista(item) {
   lista.removeChild(item);
 
   salvarDadosNoLocalStorage();
+  reloadPage();
 }
 
 function limparLista() {
@@ -200,7 +229,7 @@ function salvarDadosNoLocalStorage() {
 
     var renda = {
       nome: nomeRenda,
-      valor: valorRenda
+      valor: parseFloat(valorRenda)
     };
 
     dadosRenda.push(renda);
@@ -229,6 +258,8 @@ function limparCampos() {
   document.getElementById("nomeRenda").value = "";
   document.getElementById("valorRenda").value = "";
 }
+
+// calendario
 
 var selectedDate = null;
         var pins = [];

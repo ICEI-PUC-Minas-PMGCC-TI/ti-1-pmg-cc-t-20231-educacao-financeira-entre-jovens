@@ -8,7 +8,7 @@ main{
 }
 
 .listaGastos{
-  
+  text-align: center;
   height: 640px;
     width: 300px;
    /* grid-template-columns: repeat(3, 1fr); */
@@ -56,15 +56,24 @@ button {
   margin-right: auto;
 }
 
+.grafico{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
 
 .content {
   width: 900px;
   height: 600px;
   padding: 55px;
+  
+  
   text-align: center;
   background-color: #ffffff80;
   border-radius: 5px;
   box-shadow: 3px 3px 1px 0px #00000060;
+  margin: auto auto;
+  
 }
  
 #chartdiv{
@@ -72,12 +81,6 @@ button {
   height: 400px;
   margin-bottom: 5%;
 }
-
-#warningDiv {
-display: none;
-background-color: #ff0404;
-color: #ffffff;
-padding: 10px;
-font-weight: bold;
-text-align: center;
+#chartdiv h1{
+  margin-bottom: 50px;
 }
