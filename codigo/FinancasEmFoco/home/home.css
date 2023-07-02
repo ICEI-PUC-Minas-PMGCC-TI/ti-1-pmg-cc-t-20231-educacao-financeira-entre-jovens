@@ -4,7 +4,7 @@ main{
     justify-content: center;
     margin: 150px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
   
   
@@ -16,12 +16,16 @@ main{
     background-color: #ffffff80;
     border-radius: 5px;
     box-shadow: 3px 3px 1px 0px #00000060;
+    display: grid;
+    grid-column: span 2
+
   }
    
   #chartdiv{
     width: auto;
     height: 400px;
     margin-bottom: 5%;
+    display: grid;
   }
   
 #warningDiv {
@@ -120,4 +124,18 @@ th, td {
 
 #calendarContainer{
   overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  main{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 150px auto;
+  }
+
+  .calendarioDiv{
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  
 }
